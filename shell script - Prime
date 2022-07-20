@@ -1,0 +1,21 @@
+4. prime:
+
+
+echo “Enter a number:”
+read n
+i=1
+k=0
+while test $i -le $n
+do
+if test `expr $n % $i ` -eq 0
+then
+k=`expr $k + 1`
+fi
+i=`expr $i + 1`
+done
+if test $k -eq 2
+then
+echo “$n is prime”
+else
+echo “$n is not prime”
+fi
