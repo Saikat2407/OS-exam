@@ -1,0 +1,19 @@
+3. maxthree:
+if test $# -ne 3
+then
+echo “please give three numbers”
+exit
+fi
+if test $# -eq 3
+then
+max=$1
+if test $2 -gt $max
+then
+max=$2
+fi
+if test $3 -gt $max
+then
+max=$3
+fi
+fi
+echo “max number=$max”
