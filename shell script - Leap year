@@ -1,0 +1,16 @@
+2. leapyear:
+
+
+if test $# -eq 0
+then
+set `date`
+var=$6
+else
+var=$1
+fi
+if test `expr $var % 4` -eq 0 -a `expr $var % 100` -ne 0 -o `expr $var % 400` -eq 0
+then
+echo “$var is a leap year”
+else
+echo “$var is not a leap year”
+fi
