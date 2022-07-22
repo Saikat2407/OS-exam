@@ -59,3 +59,8 @@ int main()
     cout <<"Minimum cost is "<< minimumCost << endl;    
     return 0;    
 }     
+
+
+OUTPUT
+
+https://static.javatpoint.com/ds/images/kruskals-algorithm6.png
